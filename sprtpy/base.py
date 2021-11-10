@@ -32,8 +32,8 @@ class ZmqBase(metaclass=ABCMeta):
         pass
 
 
-    def send(self, json):
-        self.socket.send_json(json)
+    def send(self, json, **kwargs):
+        self.socket.send_json(json, **kwargs)
 
     
     async def recv(self):

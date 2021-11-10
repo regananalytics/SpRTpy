@@ -20,7 +20,7 @@ class Server(ZmqBase):
     async def cmd_loop(self):
         while True:
             await asyncio.sleep(1)
-            self.send(self.package_cmd())
+            # self.send(self.package_cmd())
 
 
     def package_cmd(self):
